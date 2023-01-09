@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
+        <attribute name="ai_difficulty" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="game_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="game_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="game_won_by" optional="YES" attributeType="String"/>
+        <relationship name="game_states" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GameState" inverseName="game_fk" inverseEntity="GameState"/>
+    </entity>
+    <entity name="GameState" representedClassName="GameState" syncable="YES" codeGenerationType="class">
+        <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="is_main_player_turn" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="state_data" optional="YES" attributeType="Binary"/>
+        <attribute name="state_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="game_fk" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="game_states" inverseEntity="Game"/>
+    </entity>
+</model>
