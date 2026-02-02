@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -74,6 +74,10 @@
 		92487CE82958783D005287F3 /* TicTacToeF22UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeF22UITests.swift; sourceTree = "<group>"; };
 		92487CEA2958783D005287F3 /* TicTacToeF22UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeF22UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		920388172F31598D00542C87 /* docs */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = docs; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		92487CC62958783B005287F3 /* Frameworks */ = {
@@ -155,6 +159,7 @@
 		92487CC02958783B005287F3 = {
 			isa = PBXGroup;
 			children = (
+				920388172F31598D00542C87 /* docs */,
 				92487CCB2958783B005287F3 /* TicTacToeF22 */,
 				92487CDD2958783D005287F3 /* TicTacToeF22Tests */,
 				92487CE72958783D005287F3 /* TicTacToeF22UITests */,
