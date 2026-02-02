@@ -38,7 +38,7 @@ Once you have a complete setup, simply select your simulator and click the "__Pl
 
 Entire application in action can be seen in the GIF below:
 
-<img src="./tic-tac-toe.gif" alt="Tic Tac Toe App" width="1483" height="1262" />
+<img src="./tic-tac-toe.gif" alt="Tic Tac Toe App" width="1480" height="1280" />
 
 ---
 
